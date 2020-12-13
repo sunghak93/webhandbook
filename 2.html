@@ -3,18 +3,106 @@
 <head>
   <title>만들면서 HTML배우기(CSS)</title>
   <meta charset="utf-8">
+  <style>
+    a {
+      color:black;
+      text-decoration: none;
+    }
+
+    h1 {
+      font-size:33px; text-align: center;
+      border-bottom: 2px solid gray;
+      margin:0;
+      padding: 25px;
+      background: linear-gradient(to bottom right, slategray, lightsteelblue);
+    }
+
+    .list {
+      font-size: 22px;
+      border-right: 2px solid gray;
+      width: 110px;
+      margin: 0;
+      padding:50px;
+      letter-spacing: 3px;
+      line-height: 180%;
+      color:green;
+      background: linear-gradient(aliceblue, ghostwhite);
+    }
+
+    body {
+      margin:0;
+    }
+
+    #grid{
+      display: grid;
+      grid-template-columns: 230px 1fr;
+    }
+  </style>
 </head>
 
 <body>
-  <h1><a href="index.html">HOME</a></h1>
-  <ul>
-    <li><a href="1.html">1. HTML</a></li>
-    <li><a href="2.html">2. CSS</a></li>
-    <li><a href="3.html">3. JavaScript</a></li>
-  </ul>
+  <h1><a href="index.html">Web 사용설명서</a></h1>
+  <div id="grid">
+    <ol class="list">
+      <li><a href="1.html">HTML</a></li>
+      <li><a href="2.html" style="color:red; text-decoration: underline">CSS</a></li>
+      <li><a href="3.html">JavaScript</a></li>
+    </ol>
+    <!--
+    <h1><a href="index.html"><font color="red">HOME</font></a></h1>
+    <ol>
+      <li><a href="1.html"><font color="red">HTML</font></a></li>
+      <li><a href="2.html"><font color="red">CSS</font></a></li>
+      <li><a href="3.html"><font color="red">JavaScript</font></a></li>
+    </ol>
+    -->
+    <div>
+      <h2><strong><u>Cascading Style Sheets(CSS)</u></strong></h2>
+      <p style="font-size:30px;">코딩하는 방법 배우기<br>Atom과 CSS을 사용해서 홈페이지를 만들어 보자.<strong>생활코딩의 <u>유튜브</u></strong>를 보고 열심히 배워보자.</p>
+      <p style="margin-top:15px;">이 페이지는 CSS를 공부하면 차차 채워 나가기로 하것다. <br> 영어 공부 좀 하자, 42서울 신청하고...</p>
 
-  <h2><strong><u>Cascading Style Sheets(CSS)</u></strong></h2>
-  <p style="font-size:30px;">코딩하는 방법 배우기<br>Atom과 CSS을 사용해서 홈페이지를 만들어 보자.<strong>생활코딩의 <u>유튜브</u></strong>를 보고 열심히 배워보자.</p>
-  <p style="margin-top:15px;">이 페이지는 CSS를 공부하면 차차 채워 나가기로 하것다. <br> 영어 공부 좀 하자, 42서울 신청하고...</p>
+      <h3>CSS시작</h3>
+
+      <h4>CSS란?</h4>
+      <ul>
+      <img src="css.jpg" width="600">
+      </ul>
+      <ul>
+        <li>CSS는 웹페이지 <u>디자인 목적의 언어</u>이다.</li>
+        <li>< head>태그안에 < style>~< /style>이란 태그안에 css언어를 사용한다.</li>
+        <li>코딩을 잘하는 것은 <u>중복을 줄이는 것</u>인데 css는 그 것을 가능하게한다.(명령어 하나로 같은 종류의 태그 조정가능)</li>
+      </ul>
+
+      <h4>CSS로 모든 a태그 색상바꾸기</h4>
+      <ul>
+        <li>해드태그안에< style> a { color:black; }< /style>을 입력하면 모든 a태그의 색상이 검정으로 바뀐다.</li>
+      </ul>
+
+      <h4>CSS의 기본 문법</h4>
+      <ul>
+        <li>어디부터 어디까지 css영역인지 나타내는 방법은<u>< style>의 태그</u>로 나타내는 방법과 <u>속성</u>을 이용한 방법 2가지가 있다.</li>
+          <ol>
+            <li>해드태그안에 < style>태그를 사용하여 css의 범위를 나태내는 방법.</li>
+            <li>한 태그안에 style="내용"이라는 속성을 써서 이 태그는 css언어를 사용하는 범위다라고 알리는 방법</li>
+          </ol>
+      </ul>
+
+      <h4>css 속성(효과) 스스로 알아내기</h4>
+       <ul>
+         <li>모든 property를 외울 필요없이 <u>필요한 것이 있으면 구글에 검색</u>해서 써라.</li>
+       </ul>
+
+       <h4>css의 선택자들</h4>
+        <ul>
+          <li>선택자들의 종류: *(모든태그), element(p,h1~6,a,img 등 태그들), class(.,태그 속성으로 그룹을 나타냄), id(#,태그의 속성으로 개별을 나타냄)</li>
+          <li>선택자의 우선순위<br>같은 우선순위의 경우= <u>마지막 명령순</u>으로 우선순위<br>다른 우선순위의 경우= <u>구체적>포괄적</u> ex)id>class>element>*</li>
+        </ul>
+
+        <h4>CSS박스모델</h4>
+          <ul>
+            <img src="박스모델.jpg" width="800">
+          </ul>
+    </div>
+  </div>
 </body>
 </html>
