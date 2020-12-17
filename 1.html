@@ -3,41 +3,7 @@
 <head>
   <title>만들면서 HTML배우기(HTML)</title>
   <meta charset="utf-8">
-  <style>
-    a {
-      color:black;
-      text-decoration: none;
-    }
-
-    h1 {
-      font-size:33px; text-align: center;
-      border-bottom: 2px solid gray;
-      margin:0;
-      padding: 25px;
-      background: linear-gradient(to bottom right, slategray, lightsteelblue);
-    }
-
-    .list {
-      font-size: 22px;
-      border-right: 2px solid gray;
-      width: 110px;
-      margin: 0;
-      padding:50px;
-      letter-spacing: 3px;
-      line-height: 180%;
-      color:green;
-      background: linear-gradient(aliceblue, ghostwhite);
-    }
-
-    body {
-      margin:0;
-    }
-
-    #grid{
-      display: grid;
-      grid-template-columns: 230px 1fr;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -80,20 +46,20 @@
         <li>< img src="" width="">로 입력</li>
         여기서 img는 이미지를 넣겠다는 태그이고 <u>src는 이미지 파일이름을 나타내는 속성</u>이고 <u>width는 이미지의 크기를 나타내는 속성</u>이다.
         <li>src=""사이에 <strong>사진 파일이름 + 확장자 쓰기</strong>, <strong>width=""사이에 크기를 지정하는 숫자나 퍼센트 쓰기</strong></li>
-        <li>직접넣어보자!!<br><img src="coding.jpg" width="50%"></li>
+        <li>직접넣어보자!!<br><img src="coding.jpg" width="90%"></li>
         <li>좋은 무료이미지 사이트=<a href="http://unsplash.com" target="_blank" style="color:blue">[언스플래쉬]</a></li>
       </ul>
 
       <h3>부모태그와 자식태그</h3>
-      <img src="parent.jpg" width="400">
+      <img src="parent.jpg" width="90%">
       <ul>
         <li>< ul>와< li>태그는 반드시 부모자식간의 태그이다.</li>
         <strong>< li>는 목차(list)나타내는 태그이고 < ul>은 리스트들을 묶어주는 태그이다.</strong><br>
-        <img width="900" src="ulli.png">
+        <img width="90%" src="ulli.png">
         <li>< ul>(Unordered List)대신<u>< ol>(Ordered List)을 사용하면 자동으로 목차의 순서가 넘버링 된다.</u></li>
         <li>< table>표 작성은 3대가 같이 다닌다. <u>ex)< table>< /table>,< tr>< /tr>,< td>< /td></u></li>
         <li>< table border="숫자">라는 속성을 사용해야 표의 테두리가 나타남.</li>
-        <img src="table.jpg" width="400">
+        <img src="table.jpg" width="90%">
       </ul>
       <table border="2">
         <tr>
@@ -132,8 +98,8 @@
         <ul>
           <li>유튜브등의 영상을 퍼올 때<u>< iframe width="너비" height="높이" src="동영상저장 주소" frameborder="숫자(테두리를말함)" allowfullscreen>< /iframe></u>
           <li>자신의 피시의 영상을 올릴 때<u>< video src="비디오파일주소+확장자" controls(컨트롤박스생성) loop(무한재생) muted(음소거) autoplay(자동재생) poster="썸네일 주소+확장>< /video></u>
-          <li><video src="연습.mp4" width="640" height="360" controls poster="table.jpg"></video></li>
-          <li><video width="640" height="360" src="미국서부.mp4" controls frameborder="0">미국 서부 여행영상</video></li>
+          <li><video src="연습.mp4" width="90%" height="360" controls poster="table.jpg"></video></li>
+          <li><video width="90%" height="360" src="미국서부.mp4" controls frameborder="0">미국 서부 여행영상</video></li>
         </ul>
 
       <h3>댓글 기능의 추가</h3>

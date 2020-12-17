@@ -3,41 +3,7 @@
 <head>
   <title>만들면서 HTML배우기(CSS)</title>
   <meta charset="utf-8">
-  <style>
-    a {
-      color:black;
-      text-decoration: none;
-    }
-
-    h1 {
-      font-size:33px; text-align: center;
-      border-bottom: 2px solid gray;
-      margin:0;
-      padding: 25px;
-      background: linear-gradient(to bottom right, slategray, lightsteelblue);
-    }
-
-    .list {
-      font-size: 22px;
-      border-right: 2px solid gray;
-      width: 110px;
-      margin: 0;
-      padding:50px;
-      letter-spacing: 3px;
-      line-height: 180%;
-      color:green;
-      background: linear-gradient(aliceblue, ghostwhite);
-    }
-
-    body {
-      margin:0;
-    }
-
-    #grid{
-      display: grid;
-      grid-template-columns: 230px 1fr;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -65,7 +31,7 @@
 
       <h4>CSS란?</h4>
       <ul>
-      <img src="css.jpg" width="600">
+      <img src="css.jpg" width="90%">
       </ul>
       <ul>
         <li>CSS는 웹페이지 <u>디자인 목적의 언어</u>이다.</li>
@@ -100,7 +66,29 @@
 
         <h4>CSS박스모델</h4>
           <ul>
-            <img src="박스모델.jpg" width="800">
+            <img src="박스모델.jpg" width="90%">
+          </ul>
+
+        <h4>그리드 만들기</h4>
+          <ul>
+            <img src="그리드.jpg" width="90%">
+          </ul>
+
+        <h4>반응형 디자인 만들기</h4>
+          <ul>
+            <img src="반응형.jpg" width="90%">
+          </ul>
+
+        <h4>모든 웹페이지에 css코드 적용하기</h4>
+          <ul>
+            <li>중복을 줄이기 위해 또 여러 웹페이지의 스타일태그를 잘 관리하기위해서!!</li>
+              <ol>
+                <li>style.css라는 새 파일을 만든다</li>
+                <li>< style>태그 안에 있는 css코드만 복사해서 붙여넣는다 (또는 첨부터 만들때 css코드를 작성한다.)</li>
+                <li>웹페이지에 < style>태그를 지운다.</li>
+                <li>지운 자리(head태그 안)에  < link rel="stylesheet" href="style.css">라는 링크태그를 넣는다.(이 웹페이지에 스타일태그는 style.css라는 파일에 연결된다는 뜻)</li>
+              </ol>
+            <li>웹페이지 각각의 코드도 훨씬 효율적으로 변하고 나중에 한 번에 모든 웹페이지를 관리할 수 있다.</li>
           </ul>
     </div>
   </div>
