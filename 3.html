@@ -4,15 +4,39 @@
   <title>만들면서 HTML배우기(JS)</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="style.css">
+  <script>
+    function NightDayHandler(self){
+      var target = document.querySelector('body');
+      if(self.value === '다크모드 켬'){
+        target.style.backgroundColor='black';
+        target.style.color='white';
+        self.value = '다크모드 끔'
+
+        var alist = document.querySelectorAll('.link');
+        var i = 0;
+        while(i < alist.length){
+          alist[i].style.color = '#288CE4';
+          i = i + 1
+        }
+      } else {
+        target.style.backgroundColor='white';
+        target.style.color='black';
+        self.value = '다크모드 켬'
+
+        var alist = document.querySelectorAll('.link');
+        var i = 0;
+        while(i < alist.length){
+          alist[i].style.color = 'blue';
+          i = i + 1
+        }
+      }
+    }
+  </script>
 </head>
 
 <body>
-  <h1><a href="index.html">Web 사용설명서</a><br><input type="button" value="다크모드 켬" onclick="
-                                                  document.querySelector('body').style.backgroundColor='black';
-                                                  document.querySelector('body').style.color='white';">
-                                            &nbsp<input type="button" value="다크모드 끔" onclick="
-                                                  document.querySelector('body').style.backgroundColor='white';
-                                                  document.querySelector('body').style.color='black';"></h1>
+  <h1><a href="index.html">Web 사용설명서</a><br><input type="button" value="다크모드 켬" onclick="NightDayHandler(this);"></h1>
+
   <div id="grid">
     <ol class="list">
       <li><a href="1.html">HTML</a></li>
@@ -54,17 +78,23 @@
 
         <h4>JavaScript데이터타입</h4>
           <ul>
-            <li>숫자 데이터타입</li>
+            <li>숫자 데이터타입(Number)</li>
               <ol>
                 <li>숫자는 1,2,3,4... 숫자로 나타내면 된다.</li>
-                <li>산술연산자(+,-,*,/등 등) 등이 있다.</li>
+                <li>이항연산자 중 산술연산자(+,-,*,/등 등) 등이 있다.</li>
               </ol>
-            <li>문자 데이터타입</li>
+            <li>문자 데이터타입(String)</li>
               <ol>
                 <li>큰 따옴표("문자")나 작은 따옴표('문자')로 시작하고 끝난다. ex) "1"+"1" ="11"이 나온다.</li>
                 <li>.lenght 등 문자를 처리하는 명령(properties)들이 많다.(구글에 javascript string이라고 검색해라.)</li>
               </ol>
-          </ul>
+
+            <li>비교연산자와 블리언(Boolean)</li>
+              <ol>
+                <li>===은 이항연산자 중 비교연산자라고 불리며 두 항을 비교해 true와 false값을 나타낸다.</li>
+                <li>이 true와 false의 데이터를 두개를 묶어서 블리언이라고 한다.</li>
+              </ol>
+            </ul>
 
         <h4>변수와 대입 연산자 그리고 상수</h4>
           <ul>
@@ -75,8 +105,61 @@
 
         <h4>웹 브라우저의 제어</h4>
           <ul>
-            <li></li>
-          <ul/>
+            <li>제어할 태그를 선택하기 위해 구글검색을 해라. JavaScript 명령에서 쓰는 css 속성 및 선택자 선택등 다 구글 검색하면 나온다.</li>
+            <li>검색어 예시 : javascript select tag by css selector, javascript element style 등 등...</li>
+          </ul>
+
+        <h4>조건문(IF)</h4>
+          <ul>
+            <img src="조건문.jpg" width="90%">
+          </ul>
+
+        <h4>리팩토링</h4>
+          <ul>
+            <li>비효율적이고 중복된 코드를 만들기위해 리팩토링이 자주 필요하다.</li>
+            <li>this(이 태그의, 이 속성의 등 등)라는 키워드를 통해서 코드를 효율적으로 만들 수 있다.</li>
+            <li>변수"var target = 코드"를 통해 반복을 줄이고 또 코드를 짧게 만들자.</li>
+          </ul>
+
+        <h4>배열(Array)</h4>
+          <ul>
+            <img src="배열.jpg" width="90%">
+          </ul>
+
+        <h4>반복문(Loop)</h4>
+          <ul>
+            <img src="반복문.jpg" width="90%">
+          </ul>
+
+        <h4>함수(function)</h4>
+          <ul>
+            <img src="함수.jpg" width="90%">
+          </ul>
+
+        <h4>매개변수와 인자(Parameter & Argument)</h4>
+          <ul>
+            <img src="매인.jpg" width="90%">
+          </ul>
+
+        <h4>함수: 리턴(Return)</h4>
+          <ul>
+            <img src="리턴.jpg" width="90%">
+          </ul>
+
+        <h4>객체(object)</h4>
+          <ul>
+            <img src="객체.jpg" width="90%">
+          </ul>
+
+        <h4>객채와 반복문(for)</h4>
+          <ul>
+            <img src="for.jpg" width="90%">
+          </ul>
+
+        <h4>객체 프로퍼티와 메소드(property & Method)</h4>
+          <ul>
+            <img src="프메.jpg" width="90%">
+          </ul>
     </div>
   </div>
 </body>

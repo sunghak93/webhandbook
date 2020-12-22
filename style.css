@@ -50,6 +50,9 @@ h1 a {
   h2 {
     margin: 3px;
   }
+  .list a {
+    color: gray;
+  }
 }
 
 @media(min-width:1355px){
