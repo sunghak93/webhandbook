@@ -4,34 +4,8 @@
   <title>만들면서 HTML배우기(CSS)</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="style.css">
-  <script>
-    function NightDayHandler(self){
-      var target = document.querySelector('body');
-      if(self.value === '다크모드 켬'){
-        target.style.backgroundColor='black';
-        target.style.color='white';
-        self.value = '다크모드 끔'
-
-        var alist = document.querySelectorAll('.link');
-        var i = 0;
-        while(i < alist.length){
-          alist[i].style.color = '#288CE4';
-          i = i + 1
-        }
-      } else {
-        target.style.backgroundColor='white';
-        target.style.color='black';
-        self.value = '다크모드 켬'
-
-        var alist = document.querySelectorAll('.link');
-        var i = 0;
-        while(i < alist.length){
-          alist[i].style.color = 'blue';
-          i = i + 1
-        }
-      }
-    }
-  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="colors.js"></script>
 </head>
 
 <body>

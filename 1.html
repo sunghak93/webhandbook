@@ -4,34 +4,8 @@
   <title>만들면서 HTML배우기(HTML)</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="style.css">
-  <script>
-    function NightDayHandler(self){
-      var target = document.querySelector('body');
-      if(self.value === '다크모드 켬'){
-        target.style.backgroundColor='black';
-        target.style.color='white';
-        self.value = '다크모드 끔'
-
-        var alist = document.querySelectorAll('.link');
-        var i = 0;
-        while(i < alist.length){
-          alist[i].style.color = '#288CE4';
-          i = i + 1
-        }
-      } else {
-        target.style.backgroundColor='white';
-        target.style.color='black';
-        self.value = '다크모드 켬'
-
-        var alist = document.querySelectorAll('.link');
-        var i = 0;
-        while(i < alist.length){
-          alist[i].style.color = 'blue';
-          i = i + 1
-        }
-      }
-    }
-  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="colors.js"></script>
 </head>
 
 <body>
@@ -153,43 +127,6 @@
           <li>구글의 아날리틱스를 들어간다. 계정을 생성한 후 트레킹 코드를 받아서 헤드태그 안에 복붙~</li>
           <li>난 지금 당장은 안했음, 너무 복잡..제대로된 페이지 만들면 한다.</li>
         </ul>
-    <p>
-    <div id="disqus_thread"></div>
-    <script>
-        /**
-        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-        /*
-        var disqus_config = function () {
-        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-        };
-        */
-        (function() { // DON'T EDIT BELOW THIS LINE
-        var d = document, s = d.createElement('script');
-        s.src = 'https://mandeulmyeonseo-htmlbaeugi.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" style="color:blue">comments powered by Disqus.</a></noscript>
-    <script id="dsq-count-scr" src="//mandeulmyeonseo-htmlbaeugi.disqus.com/count.js" async></script></p>
-
-    <p>
-            <!--Start of Tawk.to Script-->
-            <script type="text/javascript">
-            var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-            (function(){
-              var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-              s1.async=true;
-              s1.src='https://embed.tawk.to/5fd4e8c5a8a254155ab2aec7/default';
-              s1.charset='UTF-8';
-              s1.setAttribute('crossorigin','*');
-              s0.parentNode.insertBefore(s1,s0);
-            })();
-          </script>
-          <!--End of Tawk.to Script-->
-    </p>
   </div>
 </div>
 </body>
